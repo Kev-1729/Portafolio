@@ -1,0 +1,174 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin-top: 80px; /* Para evitar que el Navbar cubra contenido */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: #000 !important;
+    margin-right: 20px;
+}
+
+.navbar .btn-primary {
+    background-color: #007bff;
+}
+
+/* ------------------ Hero Section ------------------ */
+.hero-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.hero-section .btn-primary {
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.hero-section .img-fluid {
+    border-radius: 10px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d1e7ff;
+    z-index: -1;
+    border-radius: 10px;
+    transform: translate(10px, 10px);
+}
+
+/* Botones */
+.btn-outline-dark {
+    border: 2px solid #333;
+}
+
+.btn-outline-primary {
+    border: 2px solid #0d6efd;
+}
+
+
+/* ------------------ Proyectos Section ------------------ */
+.projects-section {
+    padding: 60px 0;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* ------------------ Skills Section ------------------*/
+.skills-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.skill-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card .card-img-top {
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.skill-card .card-title {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* ------------------ Sección de Experiencia ------------------ */
+.experience-section {
+    padding: 60px 0;
+}
+
+.experience-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.work-img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: 300px; /* Altura fija para que la imagen sea rectangular */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-img:hover {
+    transform: scale(1.02);
+}
+
+/* Ajuste del texto debajo de la imagen */
+.mt-3 {
+    margin-top: 15px;
+}
+
+p.small {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
