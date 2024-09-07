@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#yo">Inicio</a>
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#proyectos">Proyectos</a>
@@ -42,7 +42,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="yo" class="hero-section py-5">
+    <header id="yo" class="hero-section">
         <div class="container d-flex align-items-center justify-content-between">
             <!-- Texto a la izquierda -->
             <div class="text-content">
@@ -70,76 +70,91 @@
         </div>
     </header>
 
-    <section id="proyectos" class="projects-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Mis Proyectos</h2>
+    <!-- Carrusel -->
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Indicadores del carrusel -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#projectsCarousel" data-bs-slide-to="1"></li>
+        </ol>
 
-            <!-- Carrusel -->
-            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                <div class="carousel-inner">
-                    <!-- Proyecto 1-3 -->
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-md-4">
-                                <div class="card project-card">
-                                    <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Proyecto 1</h5>
-                                        <p class="card-text">Descripción del Proyecto 1.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card project-card">
-                                    <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 2">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Proyecto 2</h5>
-                                        <p class="card-text">Descripción del Proyecto 2.</p>
-                                    </div>
-                                </div>
+        <div class="carousel-inner">
+            <!-- Slide 1 (Proyectos 1-3) -->
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto 1</h5>
+                                <p class="card-text">Descripción del Proyecto 1.</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Proyecto 4-5 (No es múltiplo de 3) -->
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-4">
-                                <div class="card project-card">
-                                    <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Proyecto 3</h5>
-                                        <p class="card-text">Descripción del Proyecto 3.</p>
-                                    </div>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto 2</h5>
+                                <p class="card-text">Descripción del Proyecto 2.</p>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card project-card">
-                                    <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 4">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Proyecto 4</h5>
-                                        <p class="card-text">Descripción del Proyecto 4.</p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto 3</h5>
+                                <p class="card-text">Descripción del Proyecto 3.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Controles del carrusel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+            </div>
+            <!-- Slide 2 (Proyectos 4-6) -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto 4</h5>
+                                <p class="card-text">Descripción del Proyecto 4.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto 5</h5>
+                                <p class="card-text">Descripción del Proyecto 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="imagenes/imagen1.png" class="card-img-top" alt="Proyecto 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto 6</h5>
+                                <p class="card-text">Descripción del Proyecto 6.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Botones de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
 
 
     <!-- Sección de Experiencia -->
@@ -203,13 +218,12 @@
     </section>
 
     <!-- Sección de Contacto -->
-    <!-- Sección de Contacto -->
     <section id="contacto" class="contact-section py-5">
         <div class="container">
             <h2 class="text-center mb-5">Contáctame</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form id="contactForm" action="https://formspree.io/f/xblrqbed" method="POST">
+                    <form id="contactForm" action="https://formspree.io/f/xblrbqed" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre"

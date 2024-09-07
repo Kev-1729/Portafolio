@@ -10,6 +10,7 @@ body {
     background-color: #fff;
     padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 10vh;
 }
 
 .navbar .nav-link {
@@ -23,8 +24,11 @@ body {
 
 /* ------------------ Hero Section ------------------ */
 .hero-section {
-    padding: 100px 0;
+    height: 90vh;
     background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-section h1 {
@@ -69,7 +73,10 @@ body {
 
 /* ------------------ Proyectos Section ------------------ */
 .projects-section {
-    padding: 60px 0;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-section h2 {
@@ -90,6 +97,46 @@ body {
     border-radius: 5px;
     height: 250px;
     object-fit: cover;
+}
+/* ------------------ Sección de Proyectos ------------------ */
+.projects-section {
+    padding: 60px 0;
+    background-color: #e7e7e7;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* Ajustar la posición de los botones para que no se superpongan */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reducir el ancho del área de clic */
+}
+
+.carousel-control-prev {
+    left: -60px; /* Mover el botón izquierdo un poco hacia afuera */
+}
+
+.carousel-control-next {
+    right: -60px; /* Mover el botón derecho un poco hacia afuera */
 }
 
 
