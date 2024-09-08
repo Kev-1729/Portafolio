@@ -8,9 +8,8 @@ body {
 /* Navbar */
 .navbar {
     background-color: #fff;
-    padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    height: 10vh;
+    height: 8vh;
 }
 
 .navbar .nav-link {
@@ -70,6 +69,11 @@ body {
     border: 2px solid #0d6efd;
 }
 
+.btn-outline-success {
+    border: 2px solid #28a745;
+    color: #28a745;
+}
+
 /* Proyectos Section */
 .projects-section {
     height: 100vh;
@@ -95,7 +99,7 @@ body {
 
 .project-card img {
     border-radius: 5px;
-    height: 250px;
+    height: 400px;
     object-fit: cover;
 }
 .carousel-indicators {
